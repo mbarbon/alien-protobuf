@@ -1,0 +1,12 @@
+/Build
+/Build.bat
+/dev_Build.PL
+/Alien-ProtoBuf*
+/META.*
+/MYMETA.*
+/_build
+/_share
+/.build
+/blib
+/pod2htm?.tmp
+/inc/AP/test*
