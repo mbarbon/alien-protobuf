@@ -2,6 +2,10 @@ Revision history for {{$dist->name}}
 
 {{$NEXT}}
 
+0.03      2016-01-03 20:47:37 CET
+
+    - Try to get an "NA" if the protobuf library is not installed
+
 0.02      2016-01-02 22:21:46 CET
 
     - Abort at Build.PL time if the protobuf library is not installed
