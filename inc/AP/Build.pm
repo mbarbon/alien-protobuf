@@ -23,9 +23,12 @@ sub new {
         alien_provides_libs   => $flags->{linker_flags},
     );
 
-    die "Could not find an installed protobuf library"
-        if !$self->SUPER::alien_check_installed_version &&
-           !$self->alien_check_installed_version;
+    if (!$self->SUPER::alien_check_installed_version &&
+            !$self->alien_check_installed_version) {
+        # this should get us an "NA"
+        warn "Could not find an installed protobuf library";
+        exit 0;
+    }
 
     return $self;
 }
