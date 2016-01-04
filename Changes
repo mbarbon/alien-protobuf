@@ -2,6 +2,10 @@ Revision history for {{$dist->name}}
 
 {{$NEXT}}
 
+0.04      2016-01-04 11:11:37 CET
+
+    - Fix missing configure-time requirement
+
 0.03      2016-01-03 20:47:37 CET
 
     - Try to get an "NA" if the protobuf library is not installed
