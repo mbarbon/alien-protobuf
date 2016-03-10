@@ -2,6 +2,10 @@ Revision history for {{$dist->name}}
 
 {{$NEXT}}
 
+0.05      2016-03-10 21:27:41 CET
+
+    - Fix configure_requires
+
 0.04      2016-01-04 11:11:37 CET
 
     - Fix missing configure-time requirement
