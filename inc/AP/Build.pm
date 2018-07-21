@@ -23,4 +23,13 @@ sub new {
     return $self;
 }
 
+sub alien_provides_cflags {
+    my $self = shift;
+    my $cflags = $self->SUPER::alien_provides_cflags || '';
+    if ($^O eq 'freebsd' && $cflags !~ m{/usr/local/include}) {
+        $cflags = "$cflags -I/usr/local/include";
+    }
+    return $cflags;
+}
+
 1;
