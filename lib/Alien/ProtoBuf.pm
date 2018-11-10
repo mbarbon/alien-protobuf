@@ -7,6 +7,10 @@ use parent 'Alien::Base';
 
 # VERSION
 
+sub cxxflags {
+    return $_[0]->config('system_provides')->{'C++flags'} // '';
+}
+
 1;
 
 =head1 SYNOPSIS
