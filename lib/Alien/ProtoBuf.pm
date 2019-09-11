@@ -8,7 +8,7 @@ use parent 'Alien::Base';
 # VERSION
 
 sub cxxflags {
-    return $_[0]->config('system_provides')->{'C++flags'} // '';
+    return $_[0]->config('system_provides')->{'C++flags'} || '';
 }
 
 1;
